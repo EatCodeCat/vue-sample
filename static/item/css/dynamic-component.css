@@ -1,0 +1,58 @@
+.download-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0.71rem;
+    padding-bottom: 0.71rem;
+    z-index: 50;
+    background-color: #fff;
+    box-shadow: 0 0.03rem 0.041667rem #eee;
+}
+
+.download-box.hide {
+    display: none;
+}
+
+.download-box a,
+.download-box p,
+.download-box span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.download-box .close {
+    width: 1.0rem;
+    height: 1.0rem;
+    margin-left: 0.85rem;
+    background-color: #333;
+}
+
+.download-box .app-icon {
+    width: 2.14rem;
+    height: 2.14rem;
+    margin-left: 0.78rem;
+    margin-right: 0.78rem;
+    background: url("../images/icon_fx.png") no-repeat;
+    background-color: #333;
+    background-size: contain;
+}
+
+.download-box p {
+    font-size: 1.14rem;
+    color: #ffa400;
+    margin-right: 0.888889rem;
+}
+
+.download-btn {
+    position: absolute;
+    top: 0.71rem;
+    right: 0.85rem;
+    width: 5.71rem;
+    height: 1.85rem;
+    line-height: 1.85rem;
+    font-size: 1.14rem;
+    color: #333333;
+    text-align: center;
+    background: #fbbd50;
+    border-radius: 0.36rem;
+}

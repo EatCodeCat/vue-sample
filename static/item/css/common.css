@@ -1,0 +1,1321 @@
+/* reset */
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    cursor: default;
+}
+a,button,input,span{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body,
+div,
+ul,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+dl,
+dd,
+dt,
+hr,
+button,
+input,
+table,
+thead,
+tbody,
+tr,
+td,
+th,
+caption {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-size: 1em;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button,
+hr,
+input,
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+    border: none;
+    outline: none;
+}
+
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-weight: normal;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active,
+a:visited {
+    color: #000;
+}
+
+body {
+    color: #051028;
+    font-family: Helvetica;
+    background-color: #f5f5f9;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.close {
+    display: block;
+    width: 0.63rem;
+    height: 0.63rem;
+    background: url("../images/icon_fxdelete.png") no-repeat;
+    background-size: contain;
+}
+
+
+/*************************************************************
+
+product detail
+
+**************************************************************/
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 7.64rem;
+    background: url("../images/image_tupianqueshi.png") no-repeat;
+    background-size: contain;
+}
+
+.imgbox li {
+    width: 100%;
+    height：100%;
+}
+
+.imgbox li img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox .page {
+    position: absolute;
+    bottom: 0.21rem;
+    left: 50%;
+    margin-left: -0.76rem;
+    width: 1.53rem;
+    height: 0.69rem;
+    line-height: 0.69rem;
+    background: #333;
+    border-radius: 0.58rem;
+    color: #fff;
+    font-size: 0.39rem;
+    text-align: center;
+    z-index: 20;
+}
+
+.imgbox .page.hide {
+    display: none;
+}
+
+.fun {
+    position: absolute;
+    bottom: -0.38rem;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.5);
+    width: 1.11rem;
+    height: 1.11rem;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 20;
+}
+
+.fun.hide {
+    display: none;
+}
+
+.like {
+    right: 1.78rem;
+}
+
+.like:before {
+    display: inline-block;
+    content: '';
+    width: 0.53rem;
+    height: 0.49rem;
+    margin-top: 0.31rem;
+    background: url("../images/icon_like.png") no-repeat;
+    background-size: contain;
+}
+
+.like.active:before {
+    background: url("../images/icon_like1.png") no-repeat;
+    background-size: contain;
+}
+
+.share {
+    right: 0.33rem;
+}
+
+.share::before {
+    display: inline-block;
+    content: '';
+    width: 0.43rem;
+    height: 0.49rem;
+    margin-top: 0.31rem;
+    background: url("../images/icon_share.png") no-repeat;
+    background-size: contain;
+}
+
+.product-info {
+    color: #000;
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.33rem;
+    padding-bottom: 0.14rem;
+    background-color: #fff;
+}
+
+.product-info h3 {
+    font-size: 0.44rem;
+    line-height: 1.8;
+}
+
+.product-info p {
+    font-size: 0.39rem;
+    line-height: 1.8;
+}
+
+.product-info p .label {
+    float: left;
+    padding-right: 0.33rem;
+}
+
+.product-info p .label-box {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 14px;
+    border: 1px solid #ff6060;
+    border-radius: 4px;
+    font-size: 0.33rem;
+    color: #ff6060;
+    text-align: left;
+}
+
+.product-info p .color {
+    display: inline-block;
+    float: left;
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-top: 0.14rem;
+    margin-right: 0.26rem;
+    border-radius: 100%;
+    background-color: #f00;
+}
+
+.product-info p .color.hide {
+    display: none;
+}
+
+.product-info p .white {
+    border: 1px solid #e5e5e5;
+    color: #fff;
+    background-color: #fff;
+}
+
+.product-info p .silver {
+    color: #e2e2e2;
+    background-color: #e2e2e2;
+}
+
+.product-info p .black {
+    color: #000;
+    background-color: #000;
+}
+
+.product-info p .ash {
+    color: #999;
+    background-color: #999;
+}
+
+.product-info p .blue {
+    color: #28BCFA;
+    background-color: #28BCFA;
+}
+
+.product-info p .orange {
+    color: #f08700;
+    background-color: #f08700;
+}
+
+.product-info p .red {
+    color: #f00;
+    background-color: #f00;
+}
+
+.product-info p .brown {
+    color: #a94300;
+    background-color: #a94300;
+}
+
+.product-info p .gold {
+    color: #ffd700;
+    background-color: #ffd700;
+}
+
+.service-charac {
+    background-color: #fff;
+}
+
+.service-charac h4 {
+    padding-left: 0.33rem;
+    height: 1.22rem;
+    line-height: 1.22rem;
+    font-size: 0.44rem;
+    color: #051028;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.service-charac ul {
+    padding-top: 0.42rem;
+    padding-bottom: 0.42rem;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+}
+
+.service-charac ul li {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 25%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    text-align: center;
+}
+
+.service-charac dl dt {
+    font-family: PingFangSC-Regular;
+    font-size: 0.33rem;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+.service-charac dl dd {
+    font-size: 0.28rem;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+.service-charac dl:before {
+    display: inline-block;
+    content: '';
+    width: 0.58rem;
+    height: 0.63rem;
+}
+
+.charac1:before {
+    background: url("../images/icon_quanbaodai.png") no-repeat;
+    background-size: contain;
+}
+
+.charac2:before {
+    background: url("../images/icon_jiandangbianjie.png") no-repeat;
+    background-size: contain;
+}
+
+.charac3:before {
+    background: url("../images/icon_yueru3000.png") no-repeat;
+    background-size: contain;
+}
+
+.charac4:before {
+    background: url("../images/icon_yizhangfuwu.png") no-repeat;
+    background-size: contain;
+}
+
+.shop-process {
+    margin-top: 0.42rem;
+    background-color: #fff;
+}
+
+.shop-process h4 {
+    padding-left: 0.33rem;
+    height: 1.22rem;
+    line-height: 1.22rem;
+    font-size: 0.44rem;
+    color: #051028;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.shop-process p {
+    width: 100%;
+    height: 10.08rem;
+    background: url("../images/image_goucheliucheng.png") no-repeat;
+    background-size: contain;
+}
+
+.shop-process img {
+    width: 100%;
+    background-color: #fff;
+}
+.footer-btn.hide{
+    display: none;
+}
+.footer-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.36rem;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    z-index: 40;
+    background-color: #fff;
+    box-shadow: 0 -0.04rem 0.5rem rgba(0,0,0,.2);
+}
+.footer-btn.in-app {
+    padding: 0.1rem 0.33rem 0.1rem 0;
+}
+.footer-btn.out-app{
+    padding: 0;
+}
+.footer-btn li {
+    -webkit-box-flex: 2;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2;
+    /* OLD - Firefox 19- */
+    width: 30%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 2;
+    /* Chrome */
+    -ms-flex: 2;
+    /* IE 10 */
+    flex: 2;
+    font-size: 0.28rem;
+    text-align: center;
+}
+
+.footer-btn li.pay {
+    -webkit-box-flex: 3;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 3;
+    /* OLD - Firefox 19- */
+    width: 40%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 3;
+    /* Chrome */
+    -ms-flex: 3;
+    /* IE 10 */
+    flex: 3;
+}
+
+.footer-btn .item i {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.56rem;
+}
+.footer-btn .out-item img,
+.footer-btn .out-item i {
+    display: inline-block;
+    // content: '';
+    width: 0.55rem;
+    height: 0.61rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+}
+.footer-btn a.out-item {
+    display: block;
+    width: 100%;
+    height:100%;
+    line-height: 1.36rem;
+    font-size: 0.38rem;
+    color:#333;
+}
+.footer-btn .tel i {
+  background-image: url("../images/iconfont-callphone.png");
+}
+.footer-btn .shop i {
+    background-image: url("../images/detail_icon_hand.png");
+}
+.shop{
+    background-image:linear-gradient(-180deg, #ffc45c 0%, #ffb93f 100%);
+}
+.btn-border{
+    border-right: 1px solid #ddd;
+}
+.contract,
+.downpay {
+    background-color: #fff;
+    color: #666;
+}
+.contract a,
+.downpay a {
+    color: #666;
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.downpay a.item i {
+    display: inline-block;
+    margin-top: 0.1rem;
+    // margin-left: 40%;
+    // margin-bottom: 0.1rem;
+    background: url("../images/icon_zaixiankefu.png") no-repeat center;
+    background-size: contain;
+}
+
+.contract a.item i {
+    display: inline-block;
+    margin-top: 0.1rem;
+    // margin-left: 40%;
+    // margin-bottom: 0.1rem;
+    background: url("../images/iconfont-callphone.png") no-repeat center;
+    background-size: contain;
+}
+
+.pay {
+    background-color: #fff;
+    line-height: 1.16rem;
+}
+.pay a {
+    display: block;
+    background: #fbbd50;
+    border-radius: 0.11rem;
+    color: #333;
+    font-size: 0.38rem;
+}
+.share-box {
+    position: absolute;
+    left: 50%;
+    width: 7.22rem;
+    height: 9.35rem;
+    margin-left: -3.61rem;
+    margin-top: 20%;
+    background: url("../images/image_tangchuang.png") no-repeat;
+    background-size: contain;
+}
+
+.share-box .close {
+    position: absolute;
+    top: 7%;
+    right: 0;
+}
+
+.share-box h4 {
+    margin-top: 3.33rem;
+    font-size: 0.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.share-box p {
+    margin-top: 0.69rem;
+    font-size: 0.39rem;
+    color: #333333;
+    text-align: center;
+}
+
+.share-item {
+    margin-top: 0.83rem;
+    padding-left: 0.97rem;
+    padding-right: 0.97rem;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+}
+
+.share-item li {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 25%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    text-align: center;
+}
+
+.share-item li:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1.39rem;
+    margin-bottom: 0.14rem;
+}
+
+.wechat:before {
+    background: url("../images/icon_weixin.png") no-repeat center;
+    background-size: contain;
+}
+
+.moments:before {
+    background: url("../images/icon_pengyouquan.png") no-repeat center;
+    background-size: contain;
+}
+
+.financial-plan {
+    padding-top: 1.35rem;
+    padding-bottom: 1.67rem;
+    overflow: hidden;
+}
+
+.financial-plan li {
+    background-image: -webkit-linear-gradient(-90deg, #fada7e 0%, #f7cd71 37%, #f8b338 100%);
+    background-image: -moz-linear-gradient(-180deg, #fada7e 0%, #f7cd71 37%, #f8b338 100%);
+    background-image: linear-gradient(-180deg, #fada7e 0%, #f7cd71 37%, #f8b338 100%);
+    width: 9.03rem;
+    height: 4.72rem;
+    margin-left: 0.14rem;
+    margin-right: 0.14rem;
+    border-radius: 0.14rem;
+    box-shadow: 0 0.04rem 0.07rem 0 #aaa;
+}
+
+.plan-swiper-container {
+    width: 9.03rem;
+    height: 4.72rem;
+    margin: 0.28rem auto;
+    position: relative;
+}
+
+.plan-swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 60%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.pk-box {
+    padding: 0.39rem 0.14rem 0 0.14rem;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    text-align: center;
+}
+
+.pk-box .box-item {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 25%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+.pk-box .pkicon-item {
+    width: 1.39rem;
+}
+
+.pk-box dl {
+    display: inline-block;
+}
+
+.pk-box .pkobj {
+    color: #e74242;
+}
+
+.pk-box dt {
+    font-size: 0.44rem;
+    line-height: 1.6;
+}
+
+.pk-box dd {
+    line-height: 1.6;
+    padding-bottom: 0.42rem;
+}
+
+.pk-box dd strong {
+    font-size: 0.89rem;
+}
+
+.pk-box .t {
+    font-size: 0.44rem;
+    line-height: 1.6;
+}
+
+.pk-box .b {
+    line-height: 1.6;
+    padding-bottom: 0.42rem;
+}
+
+.pk-box .b strong {
+    font-size: 0.89rem;
+}
+
+.pk-box .pkicon {
+    display: inline-block;
+    width: 1.22rem;
+    height: 1.22rem;
+    margin-top: 0.83rem;
+    background: url("../images/image_pk.png") no-repeat;
+    background-size: contain;
+}
+
+.pk-box .line {
+    display: inline-block;
+    width: 0.03rem;
+    height: 1.67rem;
+    border-right: 1px solid #f3a822;
+    background: #ffe0a9;
+}
+
+.plan-detail {
+    width: 100%;
+    height: 1.53rem;
+    background-color: #333;
+    font-size: 0.39rem;
+    color: #fff;
+}
+
+p.plan-detail {
+    line-height: 1.53rem;
+}
+
+.plan-detail span {
+    margin-left: 0.14rem;
+    margin-right: 0.14rem;
+}
+
+.plan-detail .period {
+    display: inline-block;
+    border: 0.03rem solid #f7b53e;
+    border-radius: 0.06rem;
+    width: 0.97rem;
+    height: 0.47rem;
+    line-height: 0.47rem;
+    font-size: 0.33rem;
+    color: #f7b53e;
+}
+
+.black-period {
+    display: inline-block;
+    background: #333333;
+    border-radius: 4px;
+    width: 1rem;
+    height: 0.51rem;
+    font-size: 0.33rem;
+    color: #f7c45e;
+}
+
+div.plan-detail p {
+    color: #f8b43c;
+}
+
+div.plan-detail p.t {
+    font-size: 0.44rem;
+    padding-top: 0.28rem;
+    padding-bottom: 0.14rem;
+}
+
+div.plan-detail p.b {
+    font-size: 0.28rem;
+    color: #f8b53c;
+}
+
+.plan-swiper-container .swiper-button-next,
+.plan-swiper-container .swiper-button-prev {
+    top: -0.78rem;
+    margin: 0;
+    width: 0.14rem;
+    height: 0.28rem;
+}
+
+.plan-swiper-container .swiper-button-next {
+    right: 2.35rem;
+    background: url(../images/icon_youjiantou.png) no-repeat;
+    background-size: contain;
+}
+
+.plan-swiper-container .swiper-button-prev {
+    left: 2.35rem;
+    background: url(../images/icon_zuojiantou.png) no-repeat;
+    background-size: contain;
+}
+
+.plan-swiper-pagination {
+    text-align: center;
+    padding-top: 0.28rem;
+}
+
+.plan-swiper-pagination .swiper-pagination-bullet {
+    width: 0.18rem;
+    height: 0.14rem;
+    border-radius: 0.08rem;
+}
+
+.plan-swiper-pagination .swiper-pagination-bullet-active {
+    width: 0.43rem;
+    height: 0.14rem;
+    border-radius: 0.11rem;
+    background-color: #ffab19;
+}
+
+.plan-swiper-container .swiper-slide-prev,
+.plan-swiper-container .swiper-slide-next {
+    height: 4.31rem;
+    margin-top: 0.21rem;
+}
+
+.swiper-slide-prev .plan-detail,
+.swiper-slide-next .plan-detail {
+    height: 1.11rem;
+    line-height: 1.11rem;
+}
+
+.plan-btn {
+    position: absolute;
+    bottom: -1.63rem;
+    left: 50%;
+    margin-left: -1.46rem;
+    display: block;
+    background-image: -webkit-linear-gradient(-90deg, #ffcf7b 0%, #fccb66 31%, #ffac19 100%);
+    background-image: -moz-linear-gradient(-180deg #ffcf7b 0%, #fccb66 31%, #ffac19 100%);
+    background-image: linear-gradient(-180deg, #ffcf7b 0%, #fccb66 31%, #ffac19 100%);
+    box-shadow: 0 0.04rem 0.07rem 0 #fbbd50;
+    border-radius: 0.9rem;
+    width: 2.92rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    font-size: 0.39rem;
+    color: #333;
+    text-align: center;
+}
+
+.financial-plan h4 {
+    position: absolute;
+    top: -0.92rem;
+    left: 50%;
+    margin-left: -1.2rem;
+    width: 2.4rem;
+    font-size: 0.44rem;
+    color: #f8b339;
+}
+
+.financial-plan .swiper-slide-prev h4,
+.financial-plan .swiper-slide-next h4 {
+    top: -1.1rem;
+}
+
+.shop-compare {
+    padding: 0.33rem;
+    line-height: 1.6;
+}
+
+.shop-compare caption {
+    background: #373737;
+    width: 100%;
+    height: 0.97rem;
+    line-height: 0.97rem;
+    font-size: 0.39rem;
+    color: #ffac19;
+    text-align: center;
+}
+
+.shop-compare th,
+.shop-compare td {
+    margin: 0;
+    padding-top: 0.28rem;
+    padding-bottom: 0.33rem;
+    text-align: center;
+    font-size: 0.33rem;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: none;
+    border-top: none;
+}
+
+.shop-compare th {
+    color: #333;
+}
+
+.taoqi {
+    color: #ffac19;
+    background-color: #ebebeb;
+}
+
+td.odd {
+    background-color: #f5f5f9;
+}
+
+.other {
+    background-color: #e3e3e3;
+}
+
+.title {
+    width: 24%;
+    background-color: #e3e3e3;
+    color: #666;
+}
+
+.content {
+    width: 38%;
+}
+
+.recommoned {
+    margin-bottom: 1.6rem;
+    background-color: #fff;
+}
+
+.recommoned h4 {
+    padding-left: 0.33rem;
+    height: 1.22rem;
+    line-height: 1.22rem;
+    font-size: 0.44rem;
+    color: #051028;
+}
+
+.recommoned li:first-child {
+    padding-top: 0;
+}
+
+.recommoned li {
+    position: relative;
+    padding: 0.28rem 0.34rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.recommoned img {
+    display: block;
+    width: 9.33rem;
+    height: 4.0rem;
+}
+
+.recommoned-band {
+    position: absolute;
+    left: 0.7rem;
+    top: 0.45rem;
+    font-size: 0.64rem;
+    color: #ffffff;
+}
+
+.recommoned-type {
+    position: absolute;
+    left: 0.7rem;
+    top: 1.45rem;
+    font-size: 0.37rem;
+    color: #ffffff;
+}
+
+.recommoned-downpay {
+    position: absolute;
+    left: 0.7rem;
+    top: 3.0rem;
+    font-size: 0.37rem;
+    color: #ffce11;
+}
+
+.recommoned-downpay span {
+    font-size: 0.56rem;
+    color: #ffce11;
+}
+
+.download-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0.208333rem;
+    padding-bottom: 0.208333rem;
+    z-index: 50;
+    background-color: #fff;
+    box-shadow: 0 0.03rem 0.041667rem #eee;
+}
+
+.download-box.hide {
+    display: none;
+}
+
+.download-box a,
+.download-box p,
+.download-box span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.download-box .close {
+    width: 0.388889rem;
+    height: 0.388889rem;
+    margin-left: 0.333333rem;
+}
+
+.download-box .app-icon {
+    width: 0.833333rem;
+    height: 0.833333rem;
+    margin-left: 0.305556rem;
+    margin-right: 0.305556rem;
+    background: url("../images/icon_fx.png") no-repeat;
+    background-size: contain;
+}
+
+.download-box p {
+    font-size: 0.444444rem;
+    color: #ffa400;
+    margin-right: 0.888889rem;
+}
+
+.download-btn {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.333333rem;
+    width: 2.222222rem;
+    height: 0.722222rem;
+    line-height: 0.722222rem;
+    font-size: 0.444444rem;
+    color: #333333;
+    text-align: center;
+    background: #fbbd50;
+    border-radius: 0.138889rem;
+}
+
+.pop-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 99;
+    color: #fff;
+}
+
+.pop-mask .pop-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.222222rem;
+    padding-left: 0.277778rem;
+    padding-right: 0.416667rem;
+    line-height: 1.222222rem;
+    font-size: 0.388889rem;
+    color: #fff;
+}
+
+.pop-mask .pop-close:before {
+    display: inline-block;
+    content: '';
+    width: 0.458333rem;
+    height: 0.458333rem;
+    padding-right: 0.416667rem;
+    font-size: 0.555556rem;
+    background: url('../images/icon_close.png') no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.pop-mask div {
+    width: 100%;
+    height: 100%;
+    margin-top: 45%;
+    // background: url('../images/image_tupianqueshi@3x.png') no-repeat;
+    // background-size: contain;
+}
+
+.pop-mask div img {
+    width: 100%;
+}
+
+
+/**************media******************************/
+
+@media screen and (min-width: 351px) and (max-width: 750px) {
+    .imgbox {
+        background: url("../images/image_tupianqueshi@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .like:before {
+        background: url("../images/icon_like@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .like.active:before {
+        background: url("../images/icon_like1@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .share::before {
+        background: url("../images/icon_share@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac1:before {
+        background: url("../images/icon_quanbaodai@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac2:before {
+        background: url("../images/icon_jiandangbianjie@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac3:before {
+        background: url("../images/icon_yueru3000@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac4:before {
+        background: url("../images/icon_yizhangfuwu@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .shop-process p {
+        background: url("../images/image_goucheliucheng@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .downpay a.item i {
+        background: url("../images/icon_zaixiankefu@2x.png") no-repeat center;
+        background-size: contain;
+    }
+    .contract a.item i {
+        background: url("../images/iconfont-callphone@2x.png") no-repeat center;
+        background-size: contain;
+    }
+    .footer-btn .tel i {
+      background-image: url("../images/iconfont-callphone@2x.png");
+    }
+    .footer-btn .shop i {
+        background-image: url("../images/detail_icon_hand@2x.png");
+    }
+    // .pay a.item:before {
+    //   background: url("../images/icon_paimai@2x.png") no-repeat;
+    //   background-size: contain; }
+    .share-box {
+        background: url("../images/image_tangchuang@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .close {
+        background: url("../images/icon_fxdelete@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .download-box .app-icon {
+        background: url("../images/icon_fx@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .wechat:before {
+        background: url("../images/icon_weixin@2x.png") no-repeat center;
+        background-size: contain;
+    }
+    .moments:before {
+        background: url("../images/icon_pengyouquan@2x.png") no-repeat center;
+        background-size: contain;
+    }
+    .pk-box .pkicon {
+        background: url("../images/image_pk@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .plan-swiper-container .swiper-button-next {
+        background: url("../images/icon_youjiantou@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .plan-swiper-container .swiper-button-prev {
+        background: url("../images/icon_zuojiantou@2x.png") no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .imgbox {
+        background: url("../images/image_tupianqueshi@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .like:before {
+        background: url("../images/icon_like@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .like.active:before {
+        background: url("../images/icon_like1@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .share::before {
+        background: url("../images/icon_share@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac1:before {
+        background: url("../images/icon_quanbaodai@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac2:before {
+        background: url("../images/icon_jiandangbianjie@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac3:before {
+        background: url("../images/icon_yueru3000@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .charac4:before {
+        background: url("../images/icon_yizhangfuwu@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .shop-process p {
+        background: url("../images/image_goucheliucheng@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .downpay a.item i {
+        background: url("../images/icon_zaixiankefu@3x.png") no-repeat center;
+        background-size: contain;
+    }
+    .contract a.item i {
+        background: url("../images/iconfont-callphone@3x.png") no-repeat center;
+        background-size: contain;
+    }
+    .footer-btn .tel i {
+      background-image: url("../images/iconfont-callphone@3x.png");
+    }
+    .footer-btn .shop i {
+        background-image: url("../images/detail_icon_hand@3x.png");
+    }
+    // .pay a.item:before {
+    //   background: url("../images/icon_paimai@3x.png") no-repeat;
+    //   background-size: contain; }
+    .share-box {
+        background: url("../images/image_tangchuang@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .close {
+        background: url("../images/icon_fxdelete@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .download-box .app-icon {
+        background: url("../images/icon_fx@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .wechat:before {
+        background: url("../images/icon_weixin@3x.png") no-repeat center;
+        background-size: contain;
+    }
+    .moments:before {
+        background: url("../images/icon_pengyouquan@3x.png") no-repeat center;
+        background-size: contain;
+    }
+    .pk-box .pkicon {
+        background: url("../images/image_pk@3x.png") no-repeat;
+        background-size: contain;
+    }
+    .plan-swiper-container .swiper-button-next {
+        background: url(../images/icon_youjiantou@3x.png) no-repeat;
+        background-size: contain;
+    }
+    .plan-swiper-container .swiper-button-prev {
+        background: url(../images/icon_zuojiantou@3x.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .pop-mask div {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+/*****************zhanchangtongji********************/
+#cnzz_stat_icon_1261185923{
+    display: none;
+}
+/****************zhanzhangtongji end*****************/
